@@ -16,8 +16,6 @@ function App() {
             <Skills />
             <AboutMe/>
             <Contacts/>
-            <p>Hello</p>
-
         </div>
     );
 }
