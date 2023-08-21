@@ -3,13 +3,16 @@ import styled from "styled-components";
 import {SkillsText} from '../../../components/skillsText/SkillsText'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>#skills</SectionTitle>
             <FlexWrapper  justify={'space-between'}>
-                <LogoArray>Logo</LogoArray>
+                <LogoArray>
+                    <Icon iconId={'bigLogo'} width={'115'} height={'115'} viewBox={'0 0 115 115'}/>
+                </LogoArray>
                 <StyledSkillsText>
                     <SkillsText
                         title={'Language'}
@@ -35,14 +38,11 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   background-color: gray;
-  padding-right: 100px;
-  padding-left: 100px;
+ min-height: 50vh;
 `
 
 const LogoArray = styled.section`
   width: 60%;
-  height: 100%;
-  background-color: blue;
 `
 
 const StyledSkillsText = styled.section`

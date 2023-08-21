@@ -2,7 +2,6 @@ import React from 'react';
 import {Logo} from "../../components/logo/Logo";
 import styled from "styled-components";
 import {Icon} from "../../components/icon/Icon";
-import {FlexWrapper} from "../../components/FlexWrapper";
 
 export const Footer = () => {
     return (
@@ -15,9 +14,10 @@ export const Footer = () => {
                 </StyledLogo>
 
                 <MediaList>
+                    <p>Media</p>
                     <MediaItem>
+
                         <MediaIcon>
-                            <p>Media</p>
                             <Icon iconId={'github'}/>
                             <Icon iconId={'figma'}/>
                             <Icon iconId={'discord'}/>

@@ -10,7 +10,13 @@ import Kahoot from '../../../assets/images/pic3.jpg'
 export const Projects = () => {
     return (
         <StyledProjects>
-            <SectionTitle>#projects</SectionTitle>
+            <StyledSectionTitle>
+                <SectionTitle>
+                    #projects
+                </SectionTitle>
+                <AllProjects href={'#'}>View all ~~</AllProjects>
+            </StyledSectionTitle>
+
             <FlexWrapper justify={'space-around'}>
                 <Project title={'ChertNodes'}
                          text={'HTML SCSS Python Flask'}
@@ -39,4 +45,11 @@ const StyledProjects = styled.section`
   background-color: red;
   min-height: 60vh;
 
+`
+const AllProjects = styled.a`
+
+`
+const StyledSectionTitle = styled.div`
+    display: flex;
+  justify-content: space-between;
 `
