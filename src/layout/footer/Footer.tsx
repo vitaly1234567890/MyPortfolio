@@ -68,5 +68,5 @@ const StyledLogo = styled.div`
 
 const Div = styled.div`
     display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 `

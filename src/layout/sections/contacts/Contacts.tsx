@@ -8,7 +8,7 @@ export const Contacts = () => {
     return (
         <StyledContacts>
             <SectionTitle>#contacts</SectionTitle>
-            <FlexWrapper justify={'space-around'}>
+            <FlexWrapper justify={'space-between'}>
                 <Text>
                     I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
                 </Text>
@@ -24,7 +24,7 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
- background-color: azure;
+ 
 `
 const Text = styled.p`
     max-width: 505px;

@@ -14,7 +14,7 @@ export const Projects = () => {
                 <SectionTitle>
                     #projects
                 </SectionTitle>
-                <AllProjects href={'#'}>View all ~~</AllProjects>
+                <AllProjects href={'#'}>{'View all ~~>'}</AllProjects>
             </StyledSectionTitle>
 
             <FlexWrapper justify={'space-around'}>
@@ -42,7 +42,7 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  background-color: red;
+  
   min-height: 60vh;
 
 `

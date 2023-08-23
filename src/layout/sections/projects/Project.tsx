@@ -25,7 +25,7 @@ export const Project = (props: ProjectPropsType) => {
     );
 };
 
-const StyledProject = styled.div`
+const StyledProject = styled.section`
 max-width: 331px;
   width: 100%;
 

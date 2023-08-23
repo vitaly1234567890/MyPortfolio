@@ -13,7 +13,7 @@ export const AboutMe = () => {
                     <p>Hello, i’m Elias!</p>
                     <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.</p>
                     <p>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
-                    <StyledLink href={"#"}>Read more</StyledLink>
+                    <StyledLink href={"#"}>{'Read more ->'}</StyledLink>
                 </StyledText>
                 <StyledPhoto src={Photo2} alt=""/>
             </FlexWrapper>
@@ -23,7 +23,7 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.section`
-  background-color: gray;
+  
 
 `
 

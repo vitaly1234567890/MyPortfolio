@@ -13,7 +13,11 @@ export const Menu = (props: {menuItems: Array<string>}) => {
                         <a href="">{item}</a>
                     </li>
                 })}
-
+                <ChooseLang>
+                    <option value="">EN</option>
+                    <option value="">RU</option>
+                    <option value="">UA</option>
+                </ChooseLang>
             </ul>
         </StyledMenu>
     );
@@ -25,4 +29,6 @@ const StyledMenu = styled.nav`
       gap: 30px;
     }
 `
+const ChooseLang = styled.select`
 
+`

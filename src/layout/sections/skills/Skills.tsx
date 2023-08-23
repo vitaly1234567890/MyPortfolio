@@ -37,7 +37,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  background-color: gray;
+  
  min-height: 50vh;
 `
 
