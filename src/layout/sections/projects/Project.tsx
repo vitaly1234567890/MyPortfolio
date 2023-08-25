@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import pic1 from '../../../assets/images/pic1.png'
+import {theme} from "../../../styles/Theme";
 
 
 type ProjectPropsType = {
@@ -8,7 +9,7 @@ type ProjectPropsType = {
     text: string
     text2: string
     src: string
-    link: string
+    link?: string
     link2?: string
 }
 
@@ -19,15 +20,16 @@ export const Project = (props: ProjectPropsType) => {
             <Text>{props.text}</Text>
             <Title>{props.title}</Title>
             <Text2>{props.text2}</Text2>
-            <Link href={'#'}>{props.link}</Link>
-            <Link href={'#'}>{props.link2}</Link>
+            <Link href={'#'}>{props.link || ''}</Link>
+            <Link2 href={'#'}>{props.link2 || ''}</Link2>
         </StyledProject>
     );
 };
 
 const StyledProject = styled.section`
-max-width: 331px;
-  width: 100%;
+  border: 1px solid ${theme.colors.secondaryFont};
+  max-width: 331px;
+  min-height: auto;
 
 `
 
@@ -37,17 +39,32 @@ const ProjectImg = styled.img`
 `
 
 const Link = styled.a`
-  
+  border: 1px solid ${theme.colors.accent};
+  margin: 10px;
+  padding: 5px;
+  color: ${theme.colors.font};
+`
+
+const Link2 = styled.a`
+  border: 1px solid ${theme.colors.secondaryFont};
+  margin: 10px;
+  padding: 5px;
+  color: ${theme.colors.secondaryFont};
 `
 
 const Title = styled.h3`
-  
+  color: ${theme.colors.font};
+  margin: 10px 0 0 10px;
+  padding: 5px;
 `
 
 const Text = styled.p`
-  
+  width: 100%;
+  border: 1px solid ${theme.colors.secondaryFont};
+  padding: 5px;
 `
 
 const Text2 = styled.p`
-  
+  margin: 10px 0 10px 10px;
+  padding: 5px;
 `

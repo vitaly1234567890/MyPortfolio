@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 
 type SkillsTextPropsType = {
@@ -23,13 +24,22 @@ const StyledText = styled.div`
   
 `
 const StyledTextTitle = styled.div`
-  border: solid;
+  border: solid ${theme.colors.secondaryFont};
+  border-bottom: none;
   max-width: 178px;
   min-height: 27px;
   display: flex;
+  color: ${theme.colors.font};
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  
 `
 const StyledTextDescription = styled.div`
   border: solid;
   max-width: 178px;
-  display: flex;
+  padding: 0 8px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
 `

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Main = () => {
     return (
@@ -13,10 +14,16 @@ export const Main = () => {
                     <StyledMainText>
                         <MainText>Elias is a <SecondColorMainText>web designer</SecondColorMainText> and <SecondColorMainText>front-end developer</SecondColorMainText></MainText>
                         <SmallText>He crafts responsive websites where technologies meet creativity</SmallText>
-                        <Button>Contact me!!</Button>
+                        <Button href='#'>Contact me!!</Button>
                     </StyledMainText>
 
                     <StyledSecondText>
+                        <LogoArray1>
+                            <Icon iconId={'bigLogo'} width={'155'} height={'155'} viewBox={'0 0 155 155'}/>
+                        </LogoArray1>
+                        <LogoArray2>
+                            <Icon iconId={'Dots'} width={'84'} height={'84'} viewBox={'0 0 84 84'}/>
+                        </LogoArray2>
                         <Photo src={photo} alt="My Photo 1"/>
                         <SecondText>Currently working on <SecondColorSecondText>Portfolio</SecondColorSecondText></SecondText>
                     </StyledSecondText>
@@ -63,7 +70,7 @@ const SmallText = styled.p`
   margin: 30px 0;
 `
 
-const Button = styled.button`
+const Button = styled.a`
   color: ${theme.colors.font};
   border: 1px solid var(--primary, #C778DD);
   display: inline-flex;
@@ -98,20 +105,7 @@ const SecondText = styled.p`
   `
 
 const StyledSecondText = styled.div`
-  position: relative;
-  z-index: 2;
-
-  &::before {
-    content: "";
-    width: 155px;
-    height: 155px;
-    border: 1px solid;
-    color: ${theme.colors.accent};
-    
-    
-    position: absolute;
-    top: 115px;
-    z-index: -1;
+  z-index: 99;
   `
 
 const SecondColorSecondText = styled.span`
@@ -120,3 +114,18 @@ const SecondColorSecondText = styled.span`
   font-weight: 600;
  
   `
+const LogoArray1 = styled.div`
+  
+  position: absolute;
+  top: 300px;
+  z-index: -1;
+  
+`
+
+const LogoArray2 = styled.div`
+  
+  position: absolute;
+  left: 1200px;
+  top: 430px;
+  
+`
