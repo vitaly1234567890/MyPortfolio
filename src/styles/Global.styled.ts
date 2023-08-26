@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     cursor: pointer;
+    
   }
 
   ul {
@@ -39,4 +40,9 @@ export const GlobalStyle = createGlobalStyle`
   section {
     background-color: ${theme.colors.primaryBg}
   }
+  
+  span {
+    color: ${theme.colors.accent};
+  }
+  
 `

@@ -33,6 +33,12 @@ const ChooseLang = styled.select`
   border-style: none;
   background-color: ${theme.colors.primaryBg};
   color: ${theme.colors.secondaryFont};
+
+  &:hover {
+    color: ${theme.colors.accent};
+  }
+  
+  cursor: pointer;
 `
 
 const ListItem = styled.li`
@@ -41,4 +47,9 @@ const ListItem = styled.li`
 
 const Link = styled.a`
   color: ${theme.colors.secondaryFont};
+  
+  
+  &:hover {
+    color: ${theme.colors.accent};
+  }
 `

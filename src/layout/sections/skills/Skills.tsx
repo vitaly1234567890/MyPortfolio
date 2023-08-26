@@ -10,7 +10,7 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-                <SectionTitle>#skills</SectionTitle>
+                <SectionTitle><span>#</span>skills</SectionTitle>
                 <FlexWrapper  justify={'space-between'}>
                     <LogoArray>
                         <LogoArray1>
@@ -36,19 +36,24 @@ export const Skills = () => {
                     <StyledSkillsText>
                         <SkillsText
                             title={'Language'}
-                            description={'TypeScript Lua Python JavaScript'}/>
+                            description={'TypeScript Lua Python JavaScript'}
+                        />
                         <SkillsText
                             title={'DataBases'}
-                            description={'SQLite PostgreSQL Mongo'}/>
+                            description={'SQLite PostgreSQL Mongo'}
+                           />
                         <SkillsText
                             title={'Tools'}
-                            description={'VSCode Neovim Linux Figma XFCE Arch Git Font Awesome'}/>
+                            description={'VSCode Neovim Linux Figma XFCE Arch Git Font Awesome'}
+                            />
                         <SkillsText
                             title={'Other'}
-                            description={'HTML CSS EJS SCSS REST Jinja'}/>
+                            description={'HTML CSS EJS SCSS REST Jinja'}
+                            />
                         <SkillsText
                             title={'Frameworks'}
-                            description={'React Vue Disnake Discord.js Flask Express.js'}/>
+                            description={'React Vue Disnake Discord.js Flask Express.js'}
+                          />
                     </StyledSkillsText>
                 </FlexWrapper>
             </Container>
@@ -58,7 +63,6 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  
  min-height: 50vh;
 `
 

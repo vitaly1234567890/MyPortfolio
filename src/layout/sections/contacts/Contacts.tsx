@@ -10,7 +10,7 @@ export const Contacts = () => {
     return (
         <StyledContacts>
             <Container>
-                <SectionTitle>#contacts</SectionTitle>
+                <SectionTitle><span>#</span>contacts</SectionTitle>
                 <FlexWrapper justify={'space-between'}>
                     <Text>
                         I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me

@@ -11,7 +11,7 @@ export const AboutMe = () => {
     return (
         <StyledAboutMe>
             <Container>
-                <SectionTitle>#about-me</SectionTitle>
+                <SectionTitle><span>#</span>about-me</SectionTitle>
                 <FlexWrapper justify={'space-between'}>
                     <StyledText>
                         <p>Hello, i’m Elias!</p>

@@ -15,7 +15,7 @@ export const Projects = () => {
             <Container>
                 <StyledSectionTitle>
                     <SectionTitle>
-                        #projects
+                        <span>#</span>projects
                     </SectionTitle>
                     <AllProjects href={'#'}>{'View all ~~>'}</AllProjects>
                 </StyledSectionTitle>
@@ -25,20 +25,21 @@ export const Projects = () => {
                              text={'HTML SCSS Python Flask'}
                              text2={'Minecraft servers hosting '}
                              src={ChertNodes}
-                             link={'Live <~>'}
-                             link2={'Cached >='}/>
+                             link1={'Live <~>'}
+                             link2={'Cached >='}
+                    />
 
                     <Project title={'ProtectX'}
                              text={'React Express Discord.js Node.js HTML SCSS Python Flask'}
                              text2={'Discord anti-crash bot'}
                              src={ProtectX}
-                             link={'Live <~>'}/>
+                             link1={'Live <~>'}/>
 
                     <Project title={'Kahoot Answers Viewer'}
                              text={'CSS Express Node.js'}
                              text2={'Get answers to your kahoot quiz'}
                              src={Kahoot}
-                             link={'Live <~>'}/>
+                             link1={'Live <~>'}/>
                 </FlexWrapper>
             </Container>
         </StyledProjects>
@@ -60,4 +61,9 @@ const StyledSectionTitle = styled.div`
   height: 100%;
   
 `
-
+const Link2 = styled.a`
+  border: 1px solid ${theme.colors.secondaryFont};
+  margin: 10px;
+  padding: 5px;
+  color: ${theme.colors.secondaryFont};
+`

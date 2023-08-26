@@ -9,7 +9,7 @@ type ProjectPropsType = {
     text: string
     text2: string
     src: string
-    link?: string
+    link1?: string
     link2?: string
 }
 
@@ -20,16 +20,18 @@ export const Project = (props: ProjectPropsType) => {
             <Text>{props.text}</Text>
             <Title>{props.title}</Title>
             <Text2>{props.text2}</Text2>
-            <Link href={'#'}>{props.link || ''}</Link>
-            <Link2 href={'#'}>{props.link2 || ''}</Link2>
+            <Link1 href={'#'}>{props.link1}</Link1>
+            <Link2 href={'#'}>{props.link2}</Link2>
         </StyledProject>
+
+
     );
 };
 
 const StyledProject = styled.section`
   border: 1px solid ${theme.colors.secondaryFont};
   max-width: 331px;
-  min-height: auto;
+  min-height: 390px;
 
 `
 
@@ -38,7 +40,7 @@ const ProjectImg = styled.img`
   height: 201px;
 `
 
-const Link = styled.a`
+const Link1 = styled.a`
   border: 1px solid ${theme.colors.accent};
   margin: 10px;
   padding: 5px;
