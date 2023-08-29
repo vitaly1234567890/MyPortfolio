@@ -15,16 +15,14 @@ type ProjectPropsType = {
 
 export const Project = (props: ProjectPropsType) => {
     return (
-        <StyledProject>
-            <ProjectImg src={props.src} alt=""/>
-            <Text>{props.text}</Text>
-            <Title>{props.title}</Title>
-            <Text2>{props.text2}</Text2>
-            <Link1 href={'#'}>{props.link1}</Link1>
-            <Link2 href={'#'}>{props.link2}</Link2>
-        </StyledProject>
-
-
+            <StyledProject>
+                <ProjectImg src={props.src} alt=""/>
+                <Text>{props.text}</Text>
+                <Title>{props.title}</Title>
+                <Text2>{props.text2}</Text2>
+                <Link1 href={'#'}>{props.link1}</Link1>
+                <Link2 href={'#'}>{props.link2} </Link2>
+            </StyledProject>
     );
 };
 
@@ -32,7 +30,6 @@ const StyledProject = styled.section`
   border: 1px solid ${theme.colors.secondaryFont};
   max-width: 331px;
   min-height: 390px;
-
 `
 
 const ProjectImg = styled.img`
