@@ -10,7 +10,7 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-                <SectionTitle><span>#</span>skills</SectionTitle>
+                <SectionTitle text={'#skills'} width={"240px"}/>
                 <FlexWrapper  justify={'space-between'}>
                     <LogoArray>
                         <LogoArray1>
@@ -72,38 +72,39 @@ const StyledSkillsText = styled.div`
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
+  width: 60%;
 `
 
 const LogoArray = styled.div`
   position: relative;
-  width: 50%;
   margin-left: 30px;
 `
 const LogoArray1 = styled.div`
-  
+
   position: absolute;
   
 `
 
 const LogoArray2 = styled.div`
   position: absolute;
-  bottom: 10px;
+  bottom: 80px;
+  left: 0;
 `
 
 const LogoArray3 = styled.div`
   position: absolute;
-  right: 10px;
+ left: 230px;
   top: -30px;
 `
 const LogoArray4 = styled.div`
   position: absolute;
-  right: 80px;
-  top: 130px;
+  left: 200px;
+  top: 150px;
 `
 
 const LogoArray5 = styled.div`
   position: absolute;
-  right: -30px;
-  top: 180px;
+  left: 300px;
+  top: 200px;
   
 `

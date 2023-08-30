@@ -14,16 +14,14 @@ export const Projects = () => {
         <StyledProjects>
             <Container>
                 <StyledSectionTitle>
-                    <SectionTitle>
-                        <span>#</span>projects
-                    </SectionTitle>
-                    <AllProjects href={'#'}>{'View all ~~>'}</AllProjects>
+                    <SectionTitle text={'#projects'} width={'511px'}></SectionTitle>
+                    <LinkAllProjects href={'#'}>{'View all ~~>'}</LinkAllProjects>
                 </StyledSectionTitle>
 
                 <FlexWrapper justify={'space-around'}>
                     <Project title={'ChertNodes'}
                              text={'HTML SCSS Python Flask'}
-                             text2={'Minecraft servers hosting '}
+                             text2={'Minecraft servers hosting'}
                              src={ChertNodes}
                              link1={'Live <~>'}
                              link2={'Cached >='}
@@ -49,7 +47,7 @@ export const Projects = () => {
 const StyledProjects = styled.section`
     
 `
-const AllProjects = styled.a`
+const LinkAllProjects = styled.a`
   font-size: 16px;
   font-weight: 500;
   margin: 50px 0;
@@ -61,9 +59,4 @@ const StyledSectionTitle = styled.div`
   height: 100%;
   
 `
-const Link2 = styled.a`
-  border: 1px solid ${theme.colors.secondaryFont};
-  margin: 10px;
-  padding: 5px;
-  color: ${theme.colors.secondaryFont};
-`
+

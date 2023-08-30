@@ -1,28 +1,46 @@
 import styled from "styled-components";
 import {theme} from "../styles/Theme";
-import {unstable_renderSubtreeIntoContainer} from "react-dom";
+import React from 'react';
+
+type SectionTitlePropsType = {
+    text?: string;
+    width?: string;
+}
+
+export const SectionTitle = (props: SectionTitlePropsType) => {
+    return (
+        <StyledSectionTitle>
+            <StyledSectionTitleText>{props.text}</StyledSectionTitleText>
+            <StyledSectionTitleLine width={props.width}></StyledSectionTitleLine>
+        </StyledSectionTitle>
+    );
+};
 
 
+const StyledSectionTitle = styled.div`
+  
+`
 
-export const SectionTitle = styled.h2`
- color: ${theme.colors.font};
+const StyledSectionTitleText = styled.h2`
+  
+  color: ${theme.colors.font};
   font-size: 32px;
   font-weight: 500;
   margin: 50px 0;
-  
-  
-  position: relative;
+`
 
+const StyledSectionTitleLine = styled.div`
+  position: relative;
+  
   &::after {
     content: '';
     display: inline-block;
-    width: 511px;
+    width: ${(props: SectionTitlePropsType) => props.width || '511px'};
     height: 1px;
     background-color: ${theme.colors.accent};
-    margin-left: 16px;
+   margin-left: 180px;
 
     position: absolute;
-    top: 20px;
+    bottom: 70px;
   }
-  
 `

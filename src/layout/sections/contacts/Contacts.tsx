@@ -5,12 +5,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Contact} from "./Contact";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Contacts = () => {
     return (
         <StyledContacts>
             <Container>
-                <SectionTitle><span>#</span>contacts</SectionTitle>
+                <SectionTitle text={'#contacts'} width={'128px'}/>
                 <FlexWrapper justify={'space-between'}>
                     <Text>
                         I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
@@ -19,6 +20,9 @@ export const Contacts = () => {
                         <TitleContacts>Message me here</TitleContacts>
                         <Contact iconId={"discord"} email={'!Elias#3519'}/>
                         <Contact iconId={"email"} email={'elias@elias.me'}/>
+                        <LogoArray5>
+                            <Icon iconId={'Dots'} width={'103'} height={'103'} viewBox={'0 0 103 103'}/>
+                        </LogoArray5>
                     </StyledTitleContacts>
                 </FlexWrapper>
             </Container>
@@ -27,7 +31,7 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-  min-height: 50vh;
+  min-height: 35vh;
 `
 const Text = styled.p`
     max-width: 505px;
@@ -43,4 +47,12 @@ const StyledTitleContacts = styled.div`
   font-weight: 400;
   border: 1px solid ${theme.colors.secondaryFont};
   padding: 16px;
+  position: relative;
+`
+
+const LogoArray5 = styled.div`
+  position: absolute;
+ right: 1370px;
+  bottom: 10px;
+  
 `

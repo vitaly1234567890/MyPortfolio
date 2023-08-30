@@ -85,7 +85,7 @@ const SecondText = styled.p`
   font-weight: 500;
   border: 1px solid var(--gray, #ABB2BF);
   padding: 8px 8px 8px 30px;
-  background: var(--background, #282C33);
+  background: ${theme.colors.primaryBg}
   margin-left: 15px;
   width: 402px;
   
@@ -105,6 +105,7 @@ const SecondText = styled.p`
   `
 
 const StyledSecondText = styled.div`
+  position: relative;
   z-index: 99;
   `
 
@@ -117,7 +118,8 @@ const SecondColorSecondText = styled.span`
 const LogoArray1 = styled.div`
   
   position: absolute;
-  top: 300px;
+  bottom: 200px;
+  left: 40px;
   z-index: -1;
   
 `
@@ -125,7 +127,6 @@ const LogoArray1 = styled.div`
 const LogoArray2 = styled.div`
   
   position: absolute;
-  left: 1200px;
-  top: 430px;
-  
+  left: 300px;
+  top: 200px;
 `
