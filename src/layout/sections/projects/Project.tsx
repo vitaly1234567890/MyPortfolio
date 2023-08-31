@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import pic1 from '../../../assets/images/pic1.png'
 import {theme} from "../../../styles/Theme";
 
 
@@ -21,7 +20,7 @@ export const Project = (props: ProjectPropsType) => {
                 <Title>{props.title}</Title>
                 <Text2>{props.text2}</Text2>
                 <Link1 href={'#'}>{props.link1}</Link1>
-                <Link2 href={'#'}>{props.link2} </Link2>
+                <Link2 href={'#'}>{props.link2}</Link2>
             </StyledProject>
     );
 };
@@ -42,6 +41,7 @@ const Link1 = styled.a`
   margin: 10px;
   padding: 5px;
   color: ${theme.colors.font};
+
 `
 
 const Link2 = styled.a`
@@ -49,6 +49,7 @@ const Link2 = styled.a`
   margin: 10px;
   padding: 5px;
   color: ${theme.colors.secondaryFont};
+  
 `
 
 const Title = styled.h3`

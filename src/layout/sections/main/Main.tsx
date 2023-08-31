@@ -38,12 +38,13 @@ const Photo = styled.img`
   width: 457px;
   height: 386px;
   object-fit: cover;
+  object-position: top;
 `
 
 const MainContainer = styled.section`
   display: flex;
   color: white;
-  min-height: 100vh;
+  min-height: 80vh;
   
 `
 
@@ -85,9 +86,10 @@ const SecondText = styled.p`
   font-weight: 500;
   border: 1px solid var(--gray, #ABB2BF);
   padding: 8px 8px 8px 30px;
-  background: ${theme.colors.primaryBg}
-  margin-left: 15px;
-  width: 402px;
+  background: ${theme.colors.primaryBg};
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 370px;
   
   position: relative;
   
@@ -107,6 +109,7 @@ const SecondText = styled.p`
 const StyledSecondText = styled.div`
   position: relative;
   z-index: 99;
+  
   `
 
 const SecondColorSecondText = styled.span`
@@ -118,8 +121,8 @@ const SecondColorSecondText = styled.span`
 const LogoArray1 = styled.div`
   
   position: absolute;
-  bottom: 200px;
-  left: 40px;
+  bottom: 180px;
+  left: 80px;
   z-index: -1;
   
 `
