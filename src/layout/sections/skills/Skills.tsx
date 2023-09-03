@@ -5,13 +5,14 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Icon} from "../../../components/icon/Icon";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
                 <SectionTitle text={'#skills'} width={"240px"}/>
-                <FlexWrapper  justify={'space-between'}>
+                <FlexWrapper  justify={'space-between'} wrap={"wrap"}>
                     <LogoArray>
                         <LogoArray1>
                             <Icon iconId={'Dots'} width={'63'} height={'63'} viewBox={'0 0 63 63'}/>
@@ -73,11 +74,22 @@ const StyledSkillsText = styled.div`
   justify-content: end;
   flex-wrap: wrap;
   width: 60%;
+
+  @media ${theme.media.tablet} {
+    width: 100%;
+    justify-content: center;
+  }
+  
 `
 
 const LogoArray = styled.div`
   position: relative;
   margin-left: 30px;
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
+  
 `
 const LogoArray1 = styled.div`
 

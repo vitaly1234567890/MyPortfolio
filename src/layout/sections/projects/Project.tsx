@@ -29,6 +29,11 @@ const StyledProject = styled.section`
   border: 1px solid ${theme.colors.secondaryFont};
   max-width: 331px;
   min-height: 390px;
+  
+  
+  @media screen and (max-width: 1024px) {
+    margin: 10px;
+  }
 `
 
 const ProjectImg = styled.img`

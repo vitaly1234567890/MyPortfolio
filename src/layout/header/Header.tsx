@@ -5,6 +5,7 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
+import {theme} from "../../styles/Theme";
 
 
 const items = ['#home', '#works', '#about-me', '#contacts']
@@ -24,10 +25,10 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header `
-  background-color: #282C33;
+  background-color: ${theme.colors.primaryBg};
   top: 0;
   left: 0;
   right: 0;
-  
+
 `
 

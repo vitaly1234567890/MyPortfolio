@@ -10,9 +10,11 @@ export const Main = () => {
     return (
         <MainContainer>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'}>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={"wrap"}>
                     <StyledMainText>
-                        <MainText>Elias is a <SecondColorMainText>web designer</SecondColorMainText> and <SecondColorMainText>front-end developer</SecondColorMainText></MainText>
+                        <MainText>Elias is a <SecondColorMainText>web
+                            designer</SecondColorMainText> and <SecondColorMainText>front-end
+                            developer</SecondColorMainText></MainText>
                         <SmallText>He crafts responsive websites where technologies meet creativity</SmallText>
                         <Button href='#'>Contact me!!</Button>
                     </StyledMainText>
@@ -25,7 +27,8 @@ export const Main = () => {
                             <Icon iconId={'Dots'} width={'84'} height={'84'} viewBox={'0 0 84 84'}/>
                         </LogoArray2>
                         <Photo src={photo} alt="My Photo 1"/>
-                        <SecondText>Currently working on <SecondColorSecondText>Portfolio</SecondColorSecondText></SecondText>
+                        <SecondText>Currently working
+                            on <SecondColorSecondText>Portfolio</SecondColorSecondText></SecondText>
                     </StyledSecondText>
                 </FlexWrapper>
             </Container>
@@ -34,22 +37,33 @@ export const Main = () => {
 };
 
 
+const MainContainer = styled.section`
+  display: flex;
+  color: white;
+  min-height: 80vh;
+`
+
 const Photo = styled.img`
   width: 457px;
   height: 386px;
   object-fit: cover;
   object-position: top;
+  
+  @media ${theme.media.mobile} {
+    width: 308px;
+    height: 260px;
+  }
 `
 
-const MainContainer = styled.section`
-  display: flex;
-  color: white;
-  min-height: 80vh;
-  
-`
+
 
 const StyledMainText = styled.div`
-  
+    width: 40%;
+
+  @media ${theme.media.tablet} {
+    width: 100%;
+  }
+ 
 `
 
 const MainText = styled.h1`
@@ -78,6 +92,10 @@ const Button = styled.a`
   padding: 8px 16px;
   align-items: flex-start;
   gap: 10px;
+
+  @media ${theme.media.mobile} {
+    visibility: hidden;
+  }
 `
 
 const SecondText = styled.p`
@@ -104,12 +122,19 @@ const SecondText = styled.p`
     position: absolute;
     left: 8px;
   }
+
+  @media ${theme.media.mobile} {
+    width: 230px;
+  }
   `
 
 const StyledSecondText = styled.div`
   position: relative;
   z-index: 99;
-  
+
+  @media ${theme.media.tablet} {
+    width: 100%;
+  }
   `
 
 const SecondColorSecondText = styled.span`
@@ -124,7 +149,8 @@ const LogoArray1 = styled.div`
   bottom: 180px;
   left: 80px;
   z-index: -1;
-  
+
+ 
 `
 
 const LogoArray2 = styled.div`
@@ -132,4 +158,5 @@ const LogoArray2 = styled.div`
   position: absolute;
   left: 300px;
   top: 200px;
+  
 `

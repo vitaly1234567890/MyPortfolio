@@ -18,7 +18,7 @@ export const Projects = () => {
                     <LinkAllProjects href={'#'}>{'View all ~~>'}</LinkAllProjects>
                 </StyledSectionTitle>
 
-                <FlexWrapper justify={'space-around'}>
+                <FlexWrapper justify={'space-around'} wrap={"wrap"}>
                     <Project title={'ChertNodes'}
                              text={'HTML SCSS Python Flask'}
                              text2={'Minecraft servers hosting'}
