@@ -40,7 +40,6 @@ export const Main = () => {
 const MainContainer = styled.section`
   display: flex;
   color: white;
-  min-height: 80vh;
 `
 
 const Photo = styled.img`
@@ -134,6 +133,7 @@ const StyledSecondText = styled.div`
 
   @media ${theme.media.tablet} {
     width: 100%;
+    overflow-x: hidden;
   }
   `
 

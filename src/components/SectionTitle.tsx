@@ -18,6 +18,8 @@ export const SectionTitle = (props: SectionTitlePropsType) => {
 
 
 const StyledSectionTitle = styled.div`
+  width: 100%;
+  overflow-x: hidden;
   
 `
 
@@ -27,6 +29,7 @@ const StyledSectionTitleText = styled.h2`
   font-size: 32px;
   font-weight: 500;
   margin: 50px 0;
+  
 `
 
 const StyledSectionTitleLine = styled.div`

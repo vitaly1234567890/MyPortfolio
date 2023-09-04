@@ -28,7 +28,7 @@ export const Project = (props: ProjectPropsType) => {
 const StyledProject = styled.section`
   border: 1px solid ${theme.colors.secondaryFont};
   max-width: 331px;
-  min-height: 390px;
+  min-height: 440px;
   
   
   @media screen and (max-width: 1024px) {
@@ -43,33 +43,35 @@ const ProjectImg = styled.img`
 
 const Link1 = styled.a`
   border: 1px solid ${theme.colors.accent};
-  margin: 10px;
-  padding: 5px;
+  margin: 16px;
+  padding: 8px 16px;
   color: ${theme.colors.font};
 
 `
 
 const Link2 = styled.a`
   border: 1px solid ${theme.colors.secondaryFont};
-  margin: 10px;
-  padding: 5px;
+  padding: 8px 16px;
   color: ${theme.colors.secondaryFont};
   
 `
 
 const Title = styled.h3`
+  
+  font-size: 24px;
   color: ${theme.colors.font};
-  margin: 10px 0 0 10px;
+  margin: 16px 16px 0 16px;
   padding: 5px;
 `
 
 const Text = styled.p`
   width: 100%;
   border: 1px solid ${theme.colors.secondaryFont};
-  padding: 5px;
+  padding: 8px;
+  line-height: 1.5;
 `
 
 const Text2 = styled.p`
-  margin: 10px 0 10px 10px;
+  margin: 0 16px 16px 16px;
   padding: 5px;
 `

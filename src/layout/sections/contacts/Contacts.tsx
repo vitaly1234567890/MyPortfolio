@@ -12,7 +12,7 @@ export const Contacts = () => {
         <StyledContacts>
             <Container>
                 <SectionTitle text={'#contacts'} width={'128px'}/>
-                <FlexWrapper justify={'space-between'}>
+                <FlexWrapper justify={'space-between'} wrap={"wrap"}>
                     <Text>
                         I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
                     </Text>
@@ -32,9 +32,15 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
   min-height: 35vh;
+  width: 100%;
 `
 const Text = styled.p`
     max-width: 505px;
+  width: 100%;
+
+  @media screen and (max-width: 1126px) {
+    margin-bottom: 40px;
+  }
 `
  const TitleContacts = styled.h3`
   color: ${theme.colors.font};
@@ -48,6 +54,10 @@ const StyledTitleContacts = styled.div`
   border: 1px solid ${theme.colors.secondaryFont};
   padding: 16px;
   position: relative;
+  width: 100%;
+  max-width: 204px;
+  height: 140px;
+  
 `
 
 const LogoArray5 = styled.div`
