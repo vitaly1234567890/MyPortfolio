@@ -57,7 +57,7 @@ const Photo = styled.img`
 
 
 const StyledMainText = styled.div`
-    width: 40%;
+    width: 50%;
 
   @media ${theme.media.tablet} {
     width: 100%;

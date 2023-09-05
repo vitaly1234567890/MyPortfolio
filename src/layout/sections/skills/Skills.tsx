@@ -73,7 +73,7 @@ const StyledSkillsText = styled.div`
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
-  width: 60%;
+  width: 70%;
 
   @media ${theme.media.tablet} {
     width: 100%;

@@ -28,10 +28,6 @@ const StyledHeaderMenu = styled.nav`
       display: flex;
       gap: 30px;
       width: 100%;
-      
-      @media ${theme.media.tablet} {
-        display: none;
-      }
     }
 `
 const ChooseLang = styled.select`

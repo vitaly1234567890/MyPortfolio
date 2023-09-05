@@ -22,11 +22,11 @@ export const SkillsText = (props:SkillsTextPropsType) => {
 const StyledText = styled.div`
   margin: 10px;
   line-height: 1.7;
+  border: 1px solid ${theme.colors.secondaryFont};
   
 `
 const StyledTextTitle = styled.div`
-  border: solid ${theme.colors.secondaryFont};
-  border-bottom: none;
+  border-bottom: 1px solid ${theme.colors.secondaryFont};
   min-height: 27px;
   display: flex;
   color: ${theme.colors.font};
@@ -36,7 +36,6 @@ const StyledTextTitle = styled.div`
   
 `
 const StyledTextDescription = styled.div`
-  border: solid;
   max-width: 180px;
   padding: 0 8px;
   gap: 8px;

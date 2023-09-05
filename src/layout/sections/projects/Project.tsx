@@ -39,6 +39,7 @@ const StyledProject = styled.section`
 const ProjectImg = styled.img`
   width: 100%;
   height: 201px;
+  border-bottom:  1px solid ${theme.colors.secondaryFont};
 `
 
 const Link1 = styled.a`
@@ -57,7 +58,6 @@ const Link2 = styled.a`
 `
 
 const Title = styled.h3`
-  
   font-size: 24px;
   color: ${theme.colors.font};
   margin: 16px 16px 0 16px;
@@ -66,7 +66,7 @@ const Title = styled.h3`
 
 const Text = styled.p`
   width: 100%;
-  border: 1px solid ${theme.colors.secondaryFont};
+  border-bottom: 1px solid ${theme.colors.secondaryFont};
   padding: 8px;
   line-height: 1.5;
 `
