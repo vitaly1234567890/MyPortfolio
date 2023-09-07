@@ -43,7 +43,7 @@ const StyledFooter = styled.footer`
   padding: 32px 0;
   background-color: ${theme.colors.primaryBg};
   min-height: 20vh;
-
+  border-top: 1px solid ${theme.colors.secondaryFont};
 `
 
 const Email = styled.a`
