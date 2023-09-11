@@ -19,8 +19,8 @@ export const Project = (props: ProjectPropsType) => {
                 <Text>{props.text}</Text>
                 <Title>{props.title}</Title>
                 <Text2>{props.text2}</Text2>
-                {props.link1 &&   <Link1 href={'#'}>{props.link1}</Link1>}
-                {props.link2 &&   <Link2 href={'#'}>{props.link2}</Link2>}
+                {props.link1 && <Link1 href={'#'}>{props.link1}</Link1>}
+                {props.link2 && <Link2 href={'#'}>{props.link2}</Link2>}
             </StyledProject>
     );
 };
